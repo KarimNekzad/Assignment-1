@@ -1,60 +1,124 @@
-* {
+html {
+    position: relative;
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #555;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  margin: 0;
-  overflow-anchor: none;
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    /*fixes page refresh position change*/
+    overflow-anchor: none;
+    /*below fixes footer position*/
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
-  /*remove's overflow scrollbar*/
-  overflow: hidden;
+    width: 80%;
+    margin: auto;
+    /*remove's overflow scrollbar*/
+    overflow: hidden;
+}
+
+#main-header {
+    background-color: olive;
+    color: white;
 }
 
 #navbar {
-  background-color: #333333;
-  color: #ffffff;
+    text-align: left;
+    background-color: #333333;
+    color: #ffffff;
 }
 
 #navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  padding-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
 }
 
 #navbar a:visited {
-  color: white;
+    color: white;
 }
 
 #navbar ul {
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 #navbar li {
-  display: inline;
+    display: inline;
+}
+
+#navbar #home-li {
+    background-color: coral;
+    padding: 20px;
+    padding-left: 35px; /*offset the 'padding-right:15' above in '#navbar a'*/
+    margin-right: 15px;
 }
 
 #showcase {
-  background-image: url('../img/image1.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  min-height: 900px;
-  margin-bottom: 30px;
-  text-align: center;
+    background-image: url('../images/image1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 370px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-bottom: 100px;
 }
 
 #showcase h1 {
-  color: #ffffff;
-  font-size: 50px;
-  line-height: 1.6em;
-  padding-top: 30px;
+    color: #333333;
+    font-size: 50px;
+    line-height: .5em;
+    padding-top: 50px;
+}
+
+#showcase h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+.clr {
+    clear: both;
+}
+
+#footer {
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#main h1 {
+    font-size: 50px;
+}
+
+#main a {
+    text-decoration: none;
+}
+
+.icon-image {
+    display: block;
+    height: 50px;
+    margin: auto;
 }
