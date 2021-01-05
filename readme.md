@@ -1,1 +1,1 @@
-Team: Karim Nekzad, Mohammed Hossain, Haitham Alanjar
+Team: Karim Nekzad, Mohammed Hossain, Haitham Alnajar
