@@ -250,6 +250,23 @@ img {
   margin-right: 30px;
 }
 
+#footer {
+  margin-top: 200px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#donate {
+  justify-content: center;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .navbar {
