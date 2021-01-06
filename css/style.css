@@ -176,12 +176,12 @@ img {
 
 /* Callback form */
 .callback-form {
-  width: 100%;
+  width: 45%;
   padding: 20px 0;
 }
 
 .callback-form label {
-  display: block;
+  display: inline;
   margin-bottom: 5px;
 }
 
