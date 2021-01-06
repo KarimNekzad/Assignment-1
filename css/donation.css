@@ -30,9 +30,16 @@ body {
   border-radius: 5px;
 }
 
-.donation-form h1,
+.donation-form h2,
+.donation-form h3,
+.donation-form h5,
 .donation-form p {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+#bitcoin-form h5 {
+  color: var(--primary-color);
 }
 
 .donation-form .form-control {
