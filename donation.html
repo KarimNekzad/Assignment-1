@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/donation.css" />
+  </head>
+  <body>
+    <div class="donation-form">
+      <h2>Donate</h2>
+      <div class="payment-method-form">
+        <p>Please select your payment method:</p>
+        <input
+          type="radio"
+          class="payment-method"
+          id="credit"
+          name="payment-method"
+          value="0"
+          checked
+        />
+        Credit Card / Visa<br />
+        <input
+          type="radio"
+          class="payment-method"
+          id="paypal"
+          name="payment-method"
+          value="1"
+        />
+        Paypal<br />
+        <input
+          type="radio"
+          class="payment-method"
+          id="bitcoin"
+          name="payment-method"
+          value="2"
+        />
+        Bitcoin<br /><br />
+      </div>
+      <div class="payment-forms" id="credit-form">
+        <div class="form-control">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-control">
+          <label for="name"></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter name on card"
+          />
+        </div>
+        <div class="form-control">
+          <label for="phone"></label>
+          <input
+            type="text"
+            name="card"
+            id="card"
+            placeholder="Enter Card Number"
+          />
+        </div>
+        <div class="form-control">
+          <label for="phone"></label>
+          <input
+            type="text"
+            name="ccv"
+            id="ccv"
+            placeholder="Enter CCV [Secuity Code]"
+          />
+        </div>
+        <div class="form-control">
+          <label for="billing"></label>
+          <input
+            type="text"
+            name="billing"
+            id="billing"
+            placeholder="Enter Billing Address"
+          />
+          <input type="submit" value="Donate Amount" id="submit" class="btn" />
+        </div>
+      </div>
+      <div class="payment-forms hidden" id="paypal-form">
+        <input
+          type="submit"
+          value="Send me to Paypal"
+          id="submit"
+          class="btn"
+        />
+      </div>
+      <div class="payment-forms hidden" id="bitcoin-form">
+        <h3>Please send BTC to this address:</h3>
+        <h5>3MeSHt5CCBMoq14BNYjfCfp81ugFVjwZeC</h5>
+        <input type="submit" value="Check Status" id="submit" class="btn" />
+      </div>
+    </div>
+    <script src="js/donation-form.js"></script>
+  </body>
+</html>

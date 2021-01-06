@@ -14,10 +14,16 @@
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <!-- Common CSS Utilities -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>PPE Shortage Awareness</title>
   </head>
   <body id="home">
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <br />
+      <iframe src="donation.html" frameborder="0"></iframe>
+    </div>
     <header class="hero">
       <div id="navbar" class="navbar top">
         <h1 class="logo">
@@ -184,7 +190,7 @@
                 supplies they need to help the milions affected by the COVID-19
                 Pandemic
               </p>
-              <a href="donate.html" class="btn btn-outline"> Donate Now </a>
+              <a onclick="openModal()" class="btn btn-outline"> Donate Now </a>
             </div>
           </div>
         </div>
