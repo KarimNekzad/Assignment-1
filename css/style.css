@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+/* These colors will be reused througout */
 :root {
   --primary-color: rgb(185, 36, 36);
   --secondary-color: #0284d0;
 }
 
+/* #region Basic */
+
+/* reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -40,8 +44,9 @@ p {
 img {
   width: 100%;
 }
+/* #endregion */
 
-/* Navbar */
+/* #region Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -79,9 +84,11 @@ img {
   font-weight: 400;
 }
 
-/* Header */
+/* #endregion */
+
+/* #region Header */
 .hero {
-  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  background: url('../images/home/background.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -113,6 +120,7 @@ img {
   font-size: 1.2em;
 }
 
+/* add dark transparent background on background image */
 .hero::before {
   content: '';
   position: absolute;
@@ -123,9 +131,71 @@ img {
   background: rgba(0, 0, 0, 0.6);
 }
 
+/* make the text and button above the dark transparent background */
 .hero * {
   z-index: 10;
 }
+/* #endregion */
+
+/* #region About Section */
+.about {
+  padding: 30px;
+}
+
+.about h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about h4 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.about i {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.content .btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transition: all 0.2s;
+}
+/* #endregion */
+
+/* #region Cases */
+
+#cases {
+  background-color: rgb(48, 52, 55);
+  color: white;
+}
+
+.cases .row {
+  justify-content: center;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.image-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #endregion */
+
+/* #region Donation */
 
 #donate .row {
   height: 80vh;
@@ -145,65 +215,9 @@ img {
   background: url('../images/home/donate.jpg') no-repeat center center/cover;
   height: 30vh;
 }
+/* #endregion */
 
-/* Icons */
-.icons {
-  padding: 30px;
-}
-
-.icons h2 {
-  font-size: 3.5rem;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.icons h4 {
-  font-weight: 900;
-  font-size: 1.2rem;
-  margin: 3rem 0;
-  text-align: center;
-}
-
-.icons i {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.content .btn:hover {
-  background-color: white;
-  color: var(--primary-color);
-  transition: all 0.2s;
-}
-
-.image-row {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-#cases {
-  background-color: rgb(48, 52, 55);
-  color: white;
-}
-
-.cases .row {
-  justify-content: center;
-}
-
-.cases img:hover {
-  opacity: 0.7;
-}
-
-.team img {
-  border-radius: 50%;
-}
-
-/* Callback form */
+/* #region Callback form */
 .callback-form {
   width: 100%;
   padding: 20px 0;
@@ -233,31 +247,9 @@ img {
   padding: 12px 0;
   margin-top: 20px;
 }
+/* #endregion */
 
-/* Post */
-.post {
-  padding: 50px 30px;
-}
-
-.post h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: #ccc solid 1px;
-}
-
-.post .meta {
-  margin-bottom: 30px;
-}
-
-.post img {
-  width: 300px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 30px;
-}
-
-/* Footer */
+/* #region Footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -278,8 +270,9 @@ img {
 .footer .social > * {
   margin-right: 30px;
 }
+/* #endregion */
 
-/* Mobile */
+/* #region Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -301,12 +294,9 @@ img {
     flex: 100%;
     max-width: 100%;
   }
-
-  .team img {
-    width: 70%;
-  }
 }
 
 a:hover {
   transition: all 0.2s;
 }
+/* #endregion */

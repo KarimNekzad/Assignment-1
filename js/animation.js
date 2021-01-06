@@ -1,3 +1,5 @@
+// Navbar animations
+
 const navbar = document.getElementById('navbar')
 let scrolled = false
 
