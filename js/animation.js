@@ -57,7 +57,6 @@ window.addEventListener('load', function () {
 });
 
 $(window).click(function (e) {
-  console.log(modalOpen);
   if (modalOpen) {
     if (
       !e.target.classList.contains('modal') &&
