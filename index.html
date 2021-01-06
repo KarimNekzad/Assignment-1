@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Welcome To EdgeLedger</title>
+    <title>PPE Shortage Awareness</title>
   </head>
   <body id="home">
     <header class="hero">
@@ -48,6 +48,7 @@
       <!-- About: Icons -->
       <section id="about" class="icons bg-light">
         <h2>The Synopsis</h2>
+
         <div class="flex-items">
           <div>
             <i class="fas fa-briefcase-medical fa-2x"></i>
@@ -63,26 +64,30 @@
           <div>
             <i class="fas fa-user-nurse fa-2x"></i>
             <div>
-              <h3>Nurses Burnt Out</h3>
+              <h3>Their Lives At Risk</h3>
               <p>
-                Even after nearly a year since the start of the pandemic, there
-                are still not enough healthcare workers to help the influx of
-                covid patients.
+                WHO Pan American Regional Office in Washington, DC, reported
+                that 570,000 healthcare workers were infected and 2500 were dead
+                due to COVID-19
               </p>
             </div>
           </div>
           <div>
             <i class="fas fa-head-side-mask fa-2x"></i>
             <div>
-              <h3>N-95 Masks</h3>
+              <h3>N-95 Masks Shortage</h3>
               <p>
-                Even after nearly a year since the start of the pandemic, there
-                are still not enough healthcare workers to help the influx of
-                covid patients.
+                87% of nurses report having to reuse a N95 disposable masks, and
+                at least 27% of were exposed to confirmed COVID-19 patients
+                without wearing appropriate PPE
               </p>
             </div>
           </div>
         </div>
+        <h4>
+          PPE, or Personal Protective Equipment include: gowns, masks (surgical
+          and N95), gloves, face/eye protection
+        </h4>
       </section>
 
       <!-- About:Solutions -->
@@ -196,7 +201,7 @@
           </div>
           <div class="column">
             <div class="column-2 bg-light">
-              <h2>Contact Us</h2>
+              <h2>Contact Us For Information</h2>
               <form action="" class="callback-form">
                 <div class="form-control">
                   <label for="name"></label>
@@ -248,41 +253,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/lightbox.min.js"></script>
-    <script>
-      const navbar = document.getElementById('navbar')
-      let scrolled = false
-
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove('top')
-          if (!scrolled) {
-            navbar.style.transform = 'translateY(-70px)'
-          }
-          setTimeout(function () {
-            navbar.style.transform = 'translateY(0)'
-            scrolled = true
-          }, 200)
-        } else {
-          navbar.classList.add('top')
-          scrolled = false
-        }
-      }
-
-      // Smooth Scrolling
-      $('#navbar a, .btn').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault()
-
-          const hash = this.hash
-
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          )
-        }
-      })
-    </script>
+    <script src="js/animation.js"></script>
   </body>
 </html>
