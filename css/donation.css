@@ -14,8 +14,7 @@
 }
 
 body {
-  background: var(--dark-color);
-  color: var(--light-color);
+  background: var(--light-color);
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin: auto;
   padding: 20px;

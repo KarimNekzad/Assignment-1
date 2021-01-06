@@ -40,16 +40,29 @@ $('#navbar a, .btn').on('click', function (e) {
 const modal = document.querySelector('.modal');
 const modalCloser = document.querySelector('.close-modal');
 
+var modalOpen = !modal.classList.contains('hidden');
+
 const openModal = function () {
-  window.scrollTo(0, 0);
   modal.classList.remove('hidden');
+  modalOpen = true;
 };
 
 const closeModal = function () {
   modal.classList.add('hidden');
+  modalOpen = false;
 };
 
 window.addEventListener('load', function () {
   modalCloser.addEventListener('click', closeModal);
-  console.log('loaded');
+});
+
+$(window).click(function (e) {
+  console.log(modalOpen);
+  if (modalOpen) {
+    if (
+      !e.target.classList.contains('modal') &&
+      !e.target.classList.contains('btn')
+    )
+      closeModal();
+  }
 });
